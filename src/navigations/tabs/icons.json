@@ -1,0 +1,18 @@
+{
+    "Home": {
+        "name": "home",
+        "type": "Ionicons"
+    },
+    "Absent": {
+        "name": "list", 
+        "type": "Ionicons"
+    },
+    "Courses": {
+        "name": "book",
+        "type": "Ionicons"
+    },
+    "Agency": {
+        "name": "building",
+        "type": "FontAwesome5"
+    }
+}
