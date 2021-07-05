@@ -4,6 +4,7 @@ import Absent from "./Absent/index";
 import Courses from "./Courses/index";
 import Agency from "./Agency/index";
 import ChooseCourse from "./Absent/ChooseCourse";
+import StudentList from "./Absent/ChooseCourse/StudentList";
 
 export {
     FrontPage,
@@ -11,5 +12,6 @@ export {
     Absent,
     Courses,
     Agency,
-    ChooseCourse
+    ChooseCourse,
+    StudentList
 }
