@@ -43,10 +43,10 @@ const DATA = [
     },
 ]
 
+const PRESENT = ['present','skip','permission','sick']
 
 const Item = (props) => {
     const [checked, setChecked] = useState(false)
-
     return (
         <ScrollView>
             <View style={Styles.listSection}>
@@ -57,43 +57,18 @@ const Item = (props) => {
                     <Text style={Styles.name}>{props.name}</Text>
                     <Text style={Styles.nim}>{props.nim}</Text>
                 </View>
-                <View style={Styles.checkSection}>
-                    <Checkbox
-                        status={checked ? 'checked' : 'unchecked'}
-                        onPress={() => {
-                            setChecked(!checked);
-                        }}
-                        color='#7E57C2'
-                        unchecked
-                    />
-                </View>
-                <View style={Styles.checkSection}>
-                    <Checkbox
-                        status={checked ? 'checked' : 'unchecked'}
-                        onPress={() => {
-                            setChecked(!checked);
-                        }}
-                        color='#7E57C2'
-                    />
-                </View>
-                <View style={Styles.checkSection}>
-                    <Checkbox
-                        status={checked ? 'checked' : 'unchecked'}
-                        onPress={() => {
-                            setChecked(!checked);
-                        }}
-                        color='#7E57C2'
-                    />
-                </View>
-                <View style={Styles.checkSection}>
-                    <Checkbox
-                        status={checked ? 'checked' : 'unchecked'}
-                        onPress={() => {
-                            setChecked(!checked);
-                        }}
-                        color='#7E57C2'
-                    />
-                </View>
+                {PRESENT.map((item, index) => (
+                    <View style={Styles.checkSection} key={index}>
+                        <Checkbox
+                            status={checked === index ? 'checked' : 'unchecked'}
+                            onPress={() => {
+                                setChecked(index);
+                            }}
+                            color='#7E57C2'
+                            unchecked
+                        />
+                    </View>
+                ))}
             </View>
         </ScrollView>
     )

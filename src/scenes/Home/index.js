@@ -1,23 +1,23 @@
 import React from 'react';
 import { View, Text, Image, ScrollView, FlatList } from 'react-native';
-import { Container } from 'components';
+import { Container, Icon } from 'components';
 import Styles from './styles';
 
 const DATA = [
     {
-        namaKelas: '1. 12D Morning Regular'
+        namaKelas: ' 12D Morning Regular'
     },
     {
-        namaKelas: '2. 12D Morning Regular'
+        namaKelas: ' 12D Morning Regular'
     },
     {
-        namaKelas: '3. 12D Morning Regular'
+        namaKelas: ' 12D Morning Regular'
     },
     {
-        namaKelas: '4. 12D Morning Regular'
+        namaKelas: ' 12D Morning Regular'
     },
     {
-        namaKelas: '5. 12D Morning Regular'
+        namaKelas: ' 12D Morning Regular'
     },
 ]
 
@@ -25,6 +25,7 @@ const Item = (props) => {
     return (
         <ScrollView>
             <View style={Styles.dataSection}>
+                <Icon name="google-classroom" type="MaterialCommunityIcons" style={Styles.icon}/>
                 <Text style={Styles.textData}>{props.namaKelas}</Text>
             </View>
         </ScrollView>

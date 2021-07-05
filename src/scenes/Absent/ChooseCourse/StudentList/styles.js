@@ -39,7 +39,7 @@ export default StyleSheet.create({
     },
     listSection: {
         flexDirection: "row",
-        marginVertical: width * .04
+        marginVertical: width * .05
     },
     imgSection: {
         borderWidth: 1,

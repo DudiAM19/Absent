@@ -16,7 +16,7 @@ const Container = ({ children, backgroundColor, barStyle, barColor }) => (
 Container.defaultProps = {
     barStyle: 'dark-content',
     barColor: '#fff',
-    backgroundColor: 'transparent'
+    backgroundColor: 'transparent',
 }
 
 export default Container;

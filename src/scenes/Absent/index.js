@@ -5,25 +5,25 @@ import Styles from './styles';
 
 const DATA = [
     {
-        namaKelas: '1. 12D Morning Regular'
+        namaKelas: ' 12D Morning Regular'
     },
     {
-        namaKelas: '2. 12D Morning Regular'
+        namaKelas: ' 12D Morning Regular'
     },
     {
-        namaKelas: '3. 12D Morning Regular'
+        namaKelas: ' 12D Morning Regular'
     },
     {
-        namaKelas: '4. 12D Morning Regular'
+        namaKelas: ' 12D Morning Regular'
     },
     {
-        namaKelas: '5. 12D Morning Regular'
+        namaKelas: ' 12D Morning Regular'
     },
     {
-        namaKelas: '5. 12D Morning Regular'
+        namaKelas: ' 12D Morning Regular'
     },
     {
-        namaKelas: '5. 12D Morning Regular'
+        namaKelas: ' 12D Morning Regular'
     },
 ]
 
@@ -31,6 +31,7 @@ const Item = (props) => {
     return (
         <ScrollView>
             <TouchableOpacity style={Styles.dataSection} onPress={props.onPress}>
+                <Icon name="google-classroom" type="MaterialCommunityIcons" style={Styles.icon}/>
                 <Text style={Styles.textData}>{props.namaKelas}</Text>
                 <Icon name="ios-chevron-forward-sharp" type="Ionicons" style={Styles.icon} />
             </TouchableOpacity>

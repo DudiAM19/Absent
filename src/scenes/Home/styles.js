@@ -55,12 +55,19 @@ export default StyleSheet.create({
         marginHorizontal: width * .09,
         borderBottomWidth: 1,
         borderBottomColor: Colors.GRAY,
-        marginTop: width * .05
+        marginTop: width * .05,
+        flexDirection: 'row',
+    },
+    icon: {
+        // marginTop: width * .01,
+        marginLeft: width * .03,
+        fontSize: RFValue(25),
+        color: Colors.BLACK_TEXT
     },
     textData: {
         fontFamily: Fonts.PRegular,
         fontSize: RFValue(18),
         color: Colors.BLACK_TEXT,
-        marginHorizontal: width * .05
+        marginHorizontal: width * .02
     }
 })

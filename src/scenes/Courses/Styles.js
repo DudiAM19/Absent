@@ -46,7 +46,11 @@ export default StyleSheet.create({
         fontFamily: Fonts.PRegular,
         fontSize: RFValue(18),
         color: Colors.BLACK_TEXT,
-        marginHorizontal: width * .05,
+        marginHorizontal: width * .02,
         flex: 1
     },
+    icon: {
+        fontSize: RFValue(25),
+        color: Colors.BLACK_TEXT
+    }
 })

@@ -5,22 +5,22 @@ import Styles from './styles';
 
 const DATA = [
     {
-        courseName: '1. Multimedia'
+        courseName: ' Multimedia'
     },
     {
-        courseName: '2. Multimedia Dalam Jaringan'
+        courseName: ' Multimedia Dalam Jaringan'
     },
     {
-        courseName: '3. Metodologi Riset Teknologi'
+        courseName: ' Metodologi Riset Teknologi'
     },
     {
-        courseName: '4. Testing Jaringan'
+        courseName: ' Testing Jaringan'
     },
     {
-        courseName: '5. Kepemimpinan'
+        courseName: ' Kepemimpinan'
     },
     {
-        courseName: '5. Pemodelan dan Simulasi'
+        courseName: ' Pemodelan dan Simulasi'
     },
 ]
 
@@ -28,6 +28,7 @@ const Item = (props) => {
     return (
         <ScrollView>
             <TouchableOpacity style={Styles.dataSection} onPress={props.onPress}>
+                <Icon name="class" type="MaterialIcons" style={Styles.icon} />
                 <Text style={Styles.textData}>{props.courseName}</Text>
                 <Icon name="ios-chevron-forward-sharp" type="Ionicons" style={Styles.icon} />
             </TouchableOpacity>
