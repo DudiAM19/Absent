@@ -3,11 +3,13 @@ import Home from "./Home/index";
 import Absent from "./Absent/index";
 import Courses from "./Courses/index";
 import Agency from "./Agency/index";
+import ChooseCourse from "./Absent/ChooseCourse";
 
 export {
     FrontPage,
     Home,
     Absent,
     Courses,
-    Agency
+    Agency,
+    ChooseCourse
 }

@@ -30,7 +30,7 @@ const DATA = [
 const Item = (props) => {
     return (
         <ScrollView>
-            <TouchableOpacity style={Styles.dataSection}>
+            <TouchableOpacity style={Styles.dataSection} onPress={props.onPress}>
                 <Text style={Styles.textData}>{props.namaKelas}</Text>
                 <Icon name="ios-chevron-forward-sharp" type="Ionicons" style={Styles.icon} />
             </TouchableOpacity>
@@ -38,7 +38,7 @@ const Item = (props) => {
     )
 }
 
-const Absent = () => {
+const Absent = ({navigation}) => {
     return (
         <Container backgroundColor="white">
             <View style={Styles.header}>
@@ -53,6 +53,7 @@ const Absent = () => {
                 renderItem={({ item }) => (
                     <Item
                         namaKelas={item.namaKelas}
+                        onPress={() => navigation.navigate('ChooseCourse')}
                     />
                 )}
             />
