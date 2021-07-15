@@ -37,7 +37,7 @@ export default StyleSheet.create({
         height: width * .1
     },
     contentSection: {
-        height: width * .9,
+        height: width,
         // backgroundColor: 'red', 
         marginVertical: width * .2,
         margin: width * .08,
@@ -59,5 +59,32 @@ export default StyleSheet.create({
         fontSize: RFValue(16),
         color: Colors.BLACK_TEXT,
         width: width * .6
+    },
+    agencySince: {
+        flexDirection: 'row'
+    },
+    textSince: {
+        marginHorizontal: width * .06,
+        fontFamily: Fonts.PMedium,
+        fontSize: RFValue(16)
+    },
+    textDate: {
+        marginHorizontal: width * .01,
+        fontFamily: Fonts.PRegular,
+        fontSize: RFValue(16),
+        color: Colors.BLACK_TEXT
+    },
+    textAddress: {
+        marginHorizontal: width * .06,
+        fontFamily: Fonts.PMedium,
+        fontSize: RFValue(16),
+        marginTop: width * .06
+    },
+    textAddresKampus: {
+        marginHorizontal: width * .08,
+        marginVertical: width * .02,
+        fontFamily: Fonts.PRegular,
+        fontSize: RFValue(14),
+        color: Colors.BLACK_TEXT
     }
 })

@@ -1,5 +1,6 @@
 import Icon from "./Icon";
 import Container from "./Container";
+import Input from "./Input"
 // import Input from "./Input";
 // import Button from "./Button";
 // import SearchBox from "./SearchBox";
@@ -10,5 +11,6 @@ import Container from "./Container";
 
 export {
     Container,
-    Icon
+    Icon,
+    Input
 }

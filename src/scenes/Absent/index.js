@@ -54,12 +54,12 @@ const Absent = ({navigation}) => {
                 renderItem={({ item }) => (
                     <Item
                         namaKelas={item.namaKelas}
-                        onPress={() => navigation.navigate('ChooseCourse')}
+                        onPress={() => navigation.navigate('StudentList')}
                     />
                 )}
             />
 
-            <TouchableOpacity style={Styles.addBtn}>
+            <TouchableOpacity style={Styles.addBtn} onPress={() => navigation.navigate('AddClass')}>
                 <Text style={Styles.add}>+</Text>
             </TouchableOpacity>
         </Container>

@@ -55,17 +55,17 @@ export default StyleSheet.create({
         color: Colors.BLACK_TEXT
     },
     addBtn: {
-        width: width * .2,
-        height: width * .2,
+        width: width * .13,
+        height: width * .13,
         backgroundColor: Colors.PRIMARY,
         borderRadius: 60,
-        alignItems: 'center',
-        justifyContent: 'center',
         marginHorizontal: width * .7,
-        marginVertical: width * .1
+        marginVertical: width * .1,
     },
     add: {
-        fontSize: RFValue(50),
+        fontSize: RFValue(40),
         color: Colors.WHITE,
+        marginLeft: 12,
+        marginTop: -6
     }
 })

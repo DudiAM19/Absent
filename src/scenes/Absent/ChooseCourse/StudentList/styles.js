@@ -24,7 +24,7 @@ export default StyleSheet.create({
     },
     desc: {
         flexDirection: 'row',
-        margin: width * .05,
+        marginHorizontal: width * .05,
         borderTopWidth: 1,
         borderBottomWidth: 1,
         borderColor: Colors.GRAY
@@ -72,4 +72,18 @@ export default StyleSheet.create({
         flexDirection: 'row',
         marginRight: width * .06
     },
+    addBtn: {
+        margin: width * .05,
+        height: width * .1,
+        width: width * .3,
+        borderRadius: 20,
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderWidth: 1,
+        borderColor: Colors.BLACK_TEXT
+    },
+    textbtn: {
+        color: Colors.BLACK_TEXT,
+        fontFamily: Fonts.PMedium
+    }
 })

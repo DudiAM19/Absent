@@ -83,6 +83,9 @@ const StudentList = ({navigation}) => {
                 </TouchableOpacity>
                 <Text style={Styles.textHeader}>Student Absent List</Text>
             </View>
+            <TouchableOpacity style={Styles.addBtn} onPress={() => navigation.navigate('AddStudent')}>
+                <Text style={Styles.textbtn}>add student</Text>
+            </TouchableOpacity>
             <View style={Styles.desc}>
                 <Text style={Styles.textName}>Name</Text>
                 <Text style={Styles.text}>Present</Text>
